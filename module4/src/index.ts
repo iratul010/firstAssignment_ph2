@@ -3,6 +3,10 @@ interface Item {
   rating: number;
 }
 
+interface Arr {
+  array: (string | number)[];
+}
+
 class FirstAssignmentTask {
   constructor() {}
 
@@ -18,6 +22,14 @@ class FirstAssignmentTask {
 
     return result;
   }
+
+  conCatArray(...arrays: (string[] | number[])[]): (string | number)[] {
+    const result = arrays.reduce<(string | number)[]>((acc, cur) => {
+      return [...acc, ...cur];
+    }, []);
+
+    return result;
+  }
 }
 //1st problem solution---->
 const taskOne = new FirstAssignmentTask();
@@ -30,7 +42,15 @@ const books: Item[] = [
   { title: "Book A", rating: 3.5 },
   { title: "Book A", rating: 2.5 },
   { title: "Book A", rating: 4.5 },
+  { title: "Book A", rating: 5.5 },
 ];
 const taskTwoFilterRating = new FirstAssignmentTask();
 const filterRating = taskTwoFilterRating.filterByRating(books);
 console.log(filterRating);
+//3rd problem solution
+
+const taskThreeConcatenate = new FirstAssignmentTask();
+console.log(taskThreeConcatenate.conCatArray([1, 2, 3, 4], [1, 2]));
+console.log(
+  taskThreeConcatenate.conCatArray(["1", " 2", " 3", " 4"], ["1", "2"])
+);
