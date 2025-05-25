@@ -1,6 +1,6 @@
 # firstAssignment_ph2
 # FirstAsmnt
-⿡What are some Differences between interfaces and types in Typescript?
+⚠️1.What are some Differences between interfaces and types in Typescript?
  
  #INTERFACE
  ---explain--
@@ -24,7 +24,7 @@ Typescript is not for object or class it is a way of type make a function,object
   but & possible                 |
 -----------------------------------------------------------
  
-//⿢What is the use of the keyof keyword in Typescript? Provide an example
+⚠️2.What is the use of the keyof keyword in Typescript? Provide an example
  
  * What is keyof?
   keyof means to separate all the keys of an object.And value safety for use it. typescript notice keyof value okay or not.
@@ -40,7 +40,7 @@ type Student = {
  showKey("name");
 showKey("age");--> error notice and show --->Argument of type '"age"' is not assignable to parameter of type 'keyof Student'.
  
-//⿣Explain the difference between any,unknown, and never  types in TYPESCRIPT
+⚠️3.Explain the difference between any,unknown, and never  types in TYPESCRIPT
  
  #any
  Ans: Any type of value here no check value , this use for when user not sure which type data get or return. Here, not safe.
@@ -56,7 +56,7 @@ showKey("age");--> error notice and show --->Argument of type '"age"' is not ass
 
 
  
-//⿤ What is the use of enums in Ts? provide an example of a numeric and string enum.
+⚠️4. What is the use of enums in Ts? provide an example of a numeric and string enum.
  
   * Enum
  #explain: Firstly we need to know  enum  full form -> enumeration.
@@ -78,7 +78,7 @@ enum Direction {
   Right   // 3
 }
 
-console.log(Direction.Up);  when console use then output give me index type value
+ 
 -----------------------------------------
 
  Strin Enum
@@ -91,19 +91,19 @@ enum Status {
  ---------------------------------
 
  
-//⿥ what is type interface in Typescript? why is it helpful?
+⚠️5. what is type interface in Typescript? why is it helpful?
  
  
 In TypeScript, both type and interface are used to define complex data types, but they have some differences and are used in slightly different contexts. mainly  we decide which type or structures data need .
  --
  object,class <--- structures for use it
- */
-//⿦ How does Typescript help in improving code quality and project maintainability?
+ 
+⚠️6. How does Typescript help in improving code quality and project maintainability?
 /**
    Mainly we need to more secure data no false value get or return. when our data type all okay then my project is best, no error showing, not possible  bug easily face.So we need typescript thats can help our project is best and initially error show if we try to error with.
    */
-//⿧ Provide an example using union and intersection types in TS?
-/*
+⚠️7. Provide an example using union and intersection types in TS?
+ 
 ℹUNION--->
 type ID = string | number;
 interface Person {
